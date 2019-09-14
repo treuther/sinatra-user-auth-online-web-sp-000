@@ -53,6 +53,7 @@ class ApplicationController < Sinatra::Base
     redirect '/'
   end
 
+#renders the user's homepage view.
   get '/users/home' do
 
     @user = User.find(session[:user_id])
